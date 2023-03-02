@@ -90,6 +90,8 @@ function checkPassword($passwordToCheck){
 
 }
 
+//---------------------------------------------------------------------------------------------------//
+
 $pwd = readline('Inserisci una password:' );
 if(checkPassword($pwd)){
     echo "Password corretta!";
