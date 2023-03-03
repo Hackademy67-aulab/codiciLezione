@@ -99,3 +99,75 @@ if(checkPassword($pwd)){
     echo "Password errata!";
 }
 
+
+//----------------------------------------------------------------------------------------------------//
+//////////////////////////////////////////////////////////////////////
+// $pwd = readline("Inserisci una password: ");
+// //REFACTORING STRETTO STRETTO
+// function checkPassword($password){
+//     $arrayChars=['!','@','#','$'];//Pagliaio
+
+//     $firstRule=checkLength($password);
+//     $secondRule=checkUpper($password);
+//     $thirdRule=checkNumber($password);
+//     $fourthRule=checkSpecial($password, $arrayChars);
+
+// 	return $firstRule && $secondRule && $thirdRule && $fourthRule;
+//     //return checkLength($password) && checkUpper($password) && checkNumber($password) && checkSpecial($password,$arrayChars);
+// }
+
+// if(checkPassword($pwd)){
+// 	echo "Password accettata\n";
+// }else{
+// 	echo "Password rifiutata per favore inserire almeno otto caratteri, almeno un numero, almeno un carattere speciale ed almeno una maiuscola\n";
+// }
+////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////
+//MILLE TENTATIVI COL DO-WHILE
+// do{
+//     $pwd = readline("Inserisci una password: ");
+// }while(!checkPassword($pwd));
+///////////////////////////////////////////////////////////////////
+
+// $pwd = readline("Inserisci una password: ");
+// while(!checkPassword($pwd)){
+//     $pwd = readline("Inserisci una password: ");
+// }
+
+//////////////////////////////////////////////////////////////////
+//3 TENTATIVI CON IL FOR
+// $errorMessage = true;
+
+// for ($i=0;$i < 3;$i++){ 
+//     $pwd = readline("Inserisci una password: ");
+//     if(checkPassword($pwd)){
+//         $errorMessage = false;
+//         break;
+//     }
+// }
+
+// if($errorMessage){
+//     echo "Tentativi esauriti, e pure noi!";
+// }
+////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////
+//3 TENTATIVI CON IL WHILE
+// $errorMessage = true;
+
+// $i=0;
+// while($i<3){
+//     $pwd = readline("Inserisci una password: ");
+//     if(checkPassword($pwd)){
+//         $errorMessage = false;
+//         break;
+//     }
+//     $i++;
+// }
+
+// if($errorMessage){
+//     echo "Tentativi esauriti, e pure noi!";
+// }
+/////////////////////////////////////////////////////////////////////
+
